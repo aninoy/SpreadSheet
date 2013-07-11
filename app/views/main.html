@@ -1,9 +1,17 @@
 <div class="hero-unit">
-  <h1>Basic Spreadsheets</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+	<h1>Spreadsheets</h1>
+</div>
+<table>
+	<tr class="column-label">
+		<td></td>
+		<td ng-repeat="column in columns">{{column}}</td>
+	</tr>
+	<tr ng-repeat="row in rows">
+		<td class="row-label">{{row}}</td>
+		<td ng-repeat="column in columns">
+			<input ng-model="cells[column+row]">
+			<div ng-bind="compute(column+row)" class="output"></div>
+		</td>
+	</tr>
+</table>
 </div>
