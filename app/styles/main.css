@@ -5,14 +5,14 @@ body {
 }
 
 .hero-unit {
-    margin: 50px auto 0 auto;
+    margin: 0px auto;
     width: auto;
     font-size: 18px;
     font-weight: 200;
     line-height: 30px;
     background-color: #eee;
     border-radius: 6px;
-    padding: 40px;
+    padding: 20px;
 }
 
 .hero-unit h1 {
@@ -20,3 +20,42 @@ body {
     line-height: 1;
     letter-spacing: -1px;
 }
+
+.output, input {
+    font-family: sans-serif;
+    font-size: 10pt;
+    height: 1.2em;
+    width: 50pt;
+    height: 14pt;
+    overflow: hidden;
+    padding-left: 2pt;
+}
+
+input {
+    border: none;
+}
+
+.output {
+    background: white;
+    pointer-events: none;
+    padding-top: 2pt;
+    position: absolute;
+    top: 0;
+}
+
+input:focus + .output {display: none;}
+
+table {border-collapse: collapse;}
+
+td {
+    border: 1px solid #EEE;
+    position: relative;
+}
+
+.column-label > td, .row-label {
+    text-align: center;
+    background: #EEE;
+    border: 1px solid #FFF;
+}
+
+.row-label {width: 2em;}
