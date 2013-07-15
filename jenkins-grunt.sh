@@ -2,5 +2,5 @@
  
 npm install -g grunt-cli
 npm install
-grint --version
+grint --version || exit 1
 grunt build --verbose
