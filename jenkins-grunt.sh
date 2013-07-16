@@ -1,8 +1,8 @@
 #export PATH=/usr/local/bin:/usr/local/git/bin/:/usr/local/bin/node:/usr/local/bin/phantomjs:
 
 git remote add stage_hub /home/aninoy/Spreadsheet_hub.git
-git config user.name "Jenkins on Racer5"
-git config user.email "aninoy@gmail.com"
+git config --global user.name "Jenkins on Racer5"
+git config --global user.email "aninoy@gmail.com"
 git checkout develop || exit 1
 npm install -g grunt-cli
 npm install
