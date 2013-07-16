@@ -1,0 +1,16 @@
+<div class="hero-unit">
+	<h1>Spreadsheets</h1>
+</div>
+<table>
+	<tr class="column-label">
+		<td></td>
+		<td ng-repeat="column in columns">{{column}}</td>
+	</tr>
+	<tr ng-repeat="row in rows">
+		<td class="row-label">{{row}}</td>
+		<td ng-repeat="column in columns">
+			<input ng-model="cells[column+row]">
+			<div ng-bind="compute(column+row)" class="output"></div>
+		</td>
+	</tr>
+</table>
