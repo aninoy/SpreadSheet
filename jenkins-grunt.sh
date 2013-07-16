@@ -6,5 +6,5 @@ npm install
 grunt build --verbose || exit 1
 grunt bump-only || exit 1
 git add --a || exit 1
-git commit -m '' || exit 1
+git commit -m 'Version bumped by Jenkins' || exit 1
 git push stage_hub develop || exit 1
