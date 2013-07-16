@@ -1,6 +1,7 @@
 #export PATH=/usr/local/bin:/usr/local/git/bin/:/usr/local/bin/node:/usr/local/bin/phantomjs:
 
 git remote add stage_hub /home/aninoy/Spreadsheet_hub.git
+git checkout develop || exit 1
 npm install -g grunt-cli
 npm install
 grunt build --verbose || exit 1
